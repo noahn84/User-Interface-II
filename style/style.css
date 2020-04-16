@@ -49,6 +49,10 @@ table {
 
 /* re-write css styles below */
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #ffffff;
   font-family: Tahoma;
@@ -70,7 +74,7 @@ header .site-name {
 
 header .site-name h1 {
   width: 325px;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 100;
   text-transform: uppercase;
   margin: 0px;
@@ -89,7 +93,7 @@ header .nav-bar nav {
 
 header .nav-bar nav a {
   display: inline-block;
-  font-size: 15px;
+  font-size: 1.5rem;
   text-decoration: none;
   padding: 10px 30px;
   border: 1px solid black;
@@ -115,7 +119,7 @@ section .intro-title {
 
 .site-intro .intro-title h2 {
   width: auto;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 100;
   text-transform: uppercase;
   margin: 0px;
@@ -129,7 +133,7 @@ section .intro-title {
 
 .site-intro .intro-text p {
   margin: 0px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 img {
@@ -200,7 +204,7 @@ img {
   text-align: center;
   width: 175px;
   line-height: 35px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .site-intro .page-info {
@@ -239,7 +243,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  font-size: 15px;
+  font-size: 1.5rem;
   text-decoration: none;
   padding: 10px 30px;
   border: 1px solid black;
@@ -271,7 +275,7 @@ footer div.contact-me {
 }
 
 footer div.contact-me a {
-  font-size: 15px;
+  font-size: 1.5rem;
   text-decoration: none;
   padding: 10px 30px;
   border: 1px solid black;
@@ -302,3 +306,121 @@ a.github:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+  header div.site-name h1 {
+    font-size: 3.8rem;
+    font-weight: 50;
+    text-align: center;
+  }
+
+  section.site-intro div.intro-title h2 {
+    font-size: 3.8rem;
+    font-weight: 50;
+  }
+
+  header .nav-bar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  header .nav-bar nav {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  header .nav-bar nav a {
+    text-align: center;
+  }
+
+  section.site-intro div.intro-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+  }
+
+  #project-1-img, #project-2-img, #project-3-img, #project-4-img {
+    margin: 10px 0px;
+  }
+
+  section.projects-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 10px 0px;
+  }
+
+  section.projects-row img {
+    object-fit: cover;
+    width: 90%;
+    height: 325px;
+  }
+
+  section.projects-row div.description {
+    width: 80%;
+    margin: 100px 0px;
+  }
+
+  section.site-intro div.selfie img {
+    width: 50%;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 500px) {
+  header div.site-name h1 {
+    font-size: 3.2rem;
+    font-weight: 50;
+    text-align: center;
+  }
+
+  header .nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+  }
+
+  header .nav-bar nav {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0px;
+  }
+
+  header .nav-bar nav a {
+    margin: 10px 0px;
+    text-align: center;
+  }
+
+  section.site-intro {
+    height: auto;
+  }
+
+  section.site-intro div.intro-title h2 {
+    font-size: 3.2rem;
+    font-weight: 50;
+  }
+
+  section.projects-row img {
+    object-fit: cover;
+    width: 90%;
+    height: 225px;
+  }
+
+  section.site-intro div.selfie img {
+    width: 75%;
+    height: auto;
+  }
+
+  footer {
+    visibility: hidden;
+  }
+
+}
